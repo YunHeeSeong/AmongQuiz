@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.amongquiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_among_foreground"
+        android:label="AmongQuiz"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.amongquiz.FirstAuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.amongquiz.PoketActivity"></activity>
+        <activity android:name="com.example.amongquiz.joinActivity" />
+        <activity android:name="com.example.amongquiz.NoteActivity" />
+
+        <!-- 메인엑티비티를 login엑티비티로 바꿈 -->
+        <activity android:name="com.example.amongquiz.LoginActivity">
+
+        </activity>
+        <activity
+            android:name="com.example.amongquiz.PopupNoteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity android:name="com.example.amongquiz.ResultActivity" /> <!-- 팝업 Activity -->
+        <activity
+            android:name="com.example.amongquiz.PopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity android:name="com.example.amongquiz.StoreActivity" />
+        <activity android:name="com.example.amongquiz.Lv1Activity" />
+        <activity
+            android:name="com.example.amongquiz.PopupExitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme"></activity>
+        <activity android:name="com.example.amongquiz.MyPageActivity" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@drawable/btn_round1" />
+
+        <activity android:name="com.example.amongquiz.DefficultyActivity" />
+        <activity
+            android:name="com.example.amongquiz.MainActivity"
+            android:label="AmongQuiz"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

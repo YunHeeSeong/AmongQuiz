@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7e8cf"
+    tools:context="com.example.amongquiz.PoketActivity">
+
+    <ImageView
+        android:id="@+id/imgback"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="btback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imggd"
+        android:layout_width="55sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtgold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gold" />
+
+    <TextView
+        android:id="@+id/txtgold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/font_b"
+        android:text="0000"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/imggd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgpoket1"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtgold"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageView
+        android:id="@+id/imgpoket2"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtgold"
+        app:srcCompat="@drawable/hint" />
+
+    <ImageView
+        android:id="@+id/imgpoket3"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtgold"
+        app:srcCompat="@drawable/giftbox" />
+
+    <ImageView
+        android:id="@+id/imgleft"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgpoket1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imggd"
+        app:srcCompat="@drawable/left" />
+
+    <ImageView
+        android:id="@+id/imgright"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgpoket1"
+        app:layout_constraintTop_toBottomOf="@+id/imgback"
+        app:srcCompat="@drawable/right" />
+
+    <TextView
+        android:id="@+id/txtpoket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/font_b"
+        android:text="아이템명"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtexplan1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgpoket1" />
+
+    <TextView
+        android:id="@+id/txtexplan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/font_l"
+        android:text="설명문"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpoket1" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="140sp"
+        android:layout_height="45sp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/color_selector3"
+        android:fontFamily="@font/font_l"
+        android:text="적용하기"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtexplan1" />
+
+    <TextView
+        android:id="@+id/txtNone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_b"
+        android:text="보유한 아이템이 없습니다!"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

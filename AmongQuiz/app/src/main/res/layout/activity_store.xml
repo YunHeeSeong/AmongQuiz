@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7e8cf"
+    tools:context="com.example.amongquiz.StoreActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-38dp"
+        tools:layout_editor_absoluteY="53dp">
+
+        <ImageView
+            android:id="@+id/imgGift"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginTop="75dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvGold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/giftbox" />
+
+        <ImageView
+            android:id="@+id/imgHint"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintBottom_toTopOf="@+id/imgGold"
+            app:layout_constraintEnd_toStartOf="@+id/imgRight"
+            app:layout_constraintStart_toEndOf="@+id/imgLeft"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hint" />
+
+        <ImageView
+            android:id="@+id/imgGold"
+            android:layout_width="80sp"
+            android:layout_height="70sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnBuy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvGold"
+            app:layout_constraintTop_toBottomOf="@+id/imgHint"
+            app:srcCompat="@drawable/gd" />
+
+        <TextView
+            android:id="@+id/tvGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/font_b"
+            android:text="200"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnBuy"
+            app:layout_constraintEnd_toStartOf="@+id/imgGold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHint" />
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:onClick="btback"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="160sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/btn_round1"
+            android:fontFamily="@font/font_b"
+            android:onClick="buyItem"
+            android:text="사기"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgGold" />
+
+        <ImageView
+            android:id="@+id/imgLeft"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgMygd"
+            app:srcCompat="@drawable/left" />
+
+        <ImageView
+            android:id="@+id/imgRight"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="46dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgHint"
+            app:layout_constraintTop_toBottomOf="@+id/imgBack"
+            app:srcCompat="@drawable/right" />
+
+        <ImageView
+            android:id="@+id/imgCat"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvGold"
+            app:layout_constraintEnd_toStartOf="@+id/imgRight"
+            app:layout_constraintStart_toEndOf="@+id/imgLeft"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/among" />
+
+        <TextView
+            android:id="@+id/tvMyGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/font_b"
+            android:text="0000"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/imgMygd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgMygd"
+            android:layout_width="55sp"
+            android:layout_height="45sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvMyGold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gold" />
+
+        <TextView
+            android:id="@+id/txt_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/imgGold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgCat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

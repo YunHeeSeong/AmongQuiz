@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7e8cf"
+    tools:context="com.example.amongquiz.DefficultyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="-29dp">
+
+        <Button
+            android:id="@+id/btn_lv1"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/color_selector3"
+            android:fontFamily="@font/font_r"
+            android:onClick="LVSelect"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_lv2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btn_lv2"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/color_selector3"
+            android:fontFamily="@font/font_r"
+            android:onClick="LVSelect"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_lv3"
+            app:layout_constraintStart_toEndOf="@+id/btn_lv1"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btn_lv3"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/color_selector3"
+            android:fontFamily="@font/font_r"
+            android:onClick="LVSelect"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_lv4"
+            app:layout_constraintStart_toEndOf="@+id/btn_lv2"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btn_lv4"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/color_selector3"
+            android:fontFamily="@font/font_r"
+            android:onClick="LVSelect"
+            android:text="4"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_lv5"
+            app:layout_constraintStart_toEndOf="@+id/btn_lv3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btn_lv5"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/color_selector3"
+            android:fontFamily="@font/font_r"
+            android:onClick="LVSelect"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_lv4"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btn_lvEasy"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/color_selector2"
+            android:fontFamily="@font/font_r"
+            android:onClick="LVSelect"
+            android:text="초급"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_lvNomal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_lv1" />
+
+        <Button
+            android:id="@+id/btn_lvNomal"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/color_selector2"
+            android:fontFamily="@font/font_r"
+            android:onClick="LVSelect"
+            android:text="중급"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_lvHard"
+            app:layout_constraintStart_toEndOf="@+id/btn_lvEasy"
+            app:layout_constraintTop_toBottomOf="@+id/btn_lv3" />
+
+        <Button
+            android:id="@+id/btn_lvHard"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/color_selector2"
+            android:fontFamily="@font/font_r"
+            android:onClick="LVSelect"
+            android:text="고급"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_lvNomal"
+            app:layout_constraintTop_toBottomOf="@+id/btn_lv4" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/font_r"
+            android:text="난이도를 선택하세요"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_lv1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_GameStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/color_selector1"
+            android:fontFamily="@font/font_b"
+            android:onClick="GameStart"
+            android:text="게임시작"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_lvNomal" />
+
+        <TextView
+            android:id="@+id/GOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:onClick="back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
